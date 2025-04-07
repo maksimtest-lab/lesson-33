@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 33 - Homework from InnoDOM - Task 2</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+
+            img {
+                max-width: 100%;
+                min-height: 300px;
+            }
+        }
+
+        .lazy-load {
+            min-width: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Задание 1</h1>
+
+    <p>
+        Создайте веб-страницу с несколькими большими изображениями и примените ленивую загрузку для этих изображений, чтобы они загружались только при прокрутке к ним.
+    </p>
+
+    <div class="container">
+        <img data-src="./images/image_1.jpg" alt="image 1" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_2.jpg" alt="image 2" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_3.jpg" alt="image 3" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_4.jpg" alt="image 4" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_5.jpg" alt="image 5" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_6.jpg" alt="image 6" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_7.jpg" alt="image 7" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_8.jpg" alt="image 8" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_9.jpg" alt="image 9" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_10.jpg" alt="image 10" loading="lazy" class="lazy-load">
+        <img data-src="./images/image_11.jpg" alt="image 11" loading="lazy" class="lazy-load">
+    </div>
+    <script src="./task1.js"></script>
+</body>
+</html>
