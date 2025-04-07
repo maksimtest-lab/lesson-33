@@ -1,0 +1,22 @@
+// Request
+GET /users HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0
+Accept: application/json
+Authorization: Bearer: <token>
+body: { id: 1, user: 'Name' }
+
+// Response
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+// API
+
+GET /users - return all users
+
+GET /users/:userId
+GET /users/1 - return user with id = 1
+
+POST /users/:userId
+DELETE /users/:userId
